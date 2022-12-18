@@ -1,0 +1,74 @@
+<!--
+Copyright (C) 2022 Luiz Henrique Laurini.
+
+This file is part of Browserpass browser host.
+
+Browserpass browser host is free software: you can redistribute it and/or modify it under the terms
+of the GNU General Public License as published by the Free Software Foundation, either version 3 of
+the License, or (at your option) any later version.
+
+Browserpass browser host is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Browserpass browser
+host. If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script type="module" src="popup.ts"></script>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>
+                Name
+            </th>
+            <th>
+                URL
+            </th>
+            <th colspan="2">
+                <button id="sync_all">Sync</button>
+            </th>
+        </thead>
+        <tbody id="repo_table_body">
+            <tr id="repo_table_insertion_point">
+                <td>
+                    <input id="name" placeholder="Name">
+                </td>
+                <td>
+                    <input id="url" placeholder="Repo URL">
+                </td>
+                <td rowspan="2" colspan="2">
+                    <button id="add">Add</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="user" placeholder="User">
+                </td>
+                <td>
+                    <input id="password" type="password" placeholder="Password">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    <div id="pgp_import_area" class="hidden">
+        <textarea id="pgp_keys" placeholder="Encrypted ASCII armored private PGP keys" rows="5"></textarea>
+        <button id="import_pgp_keys">Import PGP keys</button>
+    </div>
+    <div id="pgp_key_listing" class="monospace hidden">
+        <button id="set_new_pgp_keys">Set new PGP keys</button>
+    </div>
+    </p>
+    <p id="messages">It seems there has been an error.</p>
+</body>
+
+</html>

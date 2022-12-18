@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Browserpass browser host",
+    "version": "0.1.0",
+    "description": "A messaging host for Browserpass that runs on the browser",
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "host_permissions": [
+        "https://github.com/*"
+    ]
+}

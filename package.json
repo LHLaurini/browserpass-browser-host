@@ -1,0 +1,24 @@
+{
+  "name": "browserpass-browser-host",
+  "version": "0.1.0",
+  "description": "A messaging host for Browserpass that runs on the browser",
+  "source": [
+    "src/askpass.html",
+    "src/background.ts",
+    "src/popup.html"
+  ],
+  "scripts": {
+    "build": "parcel build"
+  },
+  "author": "Luiz Henrique Laurini",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@isomorphic-git/lightning-fs": "^4.6.0",
+    "@types/chrome": "^0.0.204",
+    "buffer": "^5.7.1",
+    "isomorphic-git": "^1.21.0",
+    "openpgp": "^5.5.0",
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  }
+}
