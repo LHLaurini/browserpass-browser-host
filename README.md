@@ -10,6 +10,7 @@ I worked on it for most of a weekend just before the holidays, so I won't be wor
 
 ## To-do list
 
+- [ ] Keep decrypted keys in memory while the service worker goes to sleep
 - [ ] Implement syncing (right now, the button does nothing)
 - [ ] Fix closing password input (this is one or two lines I forgot)
 - [ ] Test multiple repos
